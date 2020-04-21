@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    main()
+    function main()
+    {
+        let num1 = +prompt("Nhap vao so Thu 1: ");
+        let num2 = +prompt("Nhap vao so Thu 2: ");
+        document.write("Hai so vua nhap vao la: " +num1 + " vs " + num2 + "<br>");
+        changeNumber(num1,num2);
+    }
+    function changeNumber(a,b)
+    {
+        let temp = a;
+        a = b;
+        b= temp;
+        document.write("Hai so sau khi doi cho la: " +a+ " vs " +b);
+
+    }
+</script>
+</body>
+</html>

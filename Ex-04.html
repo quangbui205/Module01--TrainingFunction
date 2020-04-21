@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkChar(c)
+    {
+        return isNaN(parseFloat(c));
+    }
+    // isNan: is Not a Number ky tu nhap vao khong la so thi tra ve True va nguoc lai//
+    let char = prompt("Nhap vao 1 ky tu bat ky: ");
+    if (!checkChar(char))
+    {
+        alert("Ky tu nhap vao la ky tu so!");
+    }
+    else
+    {
+        alert("Ky tu nhap vao khong phai la ky tu so!");
+    }
+
+
+
+</script>
+</body>
+</html>

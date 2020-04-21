@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array= [];
+    let arraylen = +prompt("Nhap vao chieu dai cua mang: ");
+    inputArray(array);
+    compare(array);
+    function inputArray()
+    {
+        for(i=0;i<arraylen;i++)
+        {
+            array[i]= +prompt("Nhap gia tri cho phan tu thu " +i+ " cua mang: " );
+        }
+        document.write("Mang vua nhap vao la: " + array.join(" , ")+ "<br>")
+    }
+    function compare()
+    {
+        let temp;
+        for(i=0;i<arraylen/2;i++)
+        {
+            temp = array[i];
+            array[i] = array[arraylen - 1 -i];
+            array[arraylen - 1 -i] = temp;
+        }
+        document.write("Mang sau khi dao nguoc la: " + array.join(" , "));
+    }
+</script>
+</body>
+</html>
